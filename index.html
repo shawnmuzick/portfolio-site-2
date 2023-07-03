@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css-vars.min.css" async>
+    <link rel="stylesheet" href="/css-type.min.css" async>
+    <link rel="stylesheet" href="/highlight/styles/atom-one-dark.min.css" async />
+</head>
+
+<body>
+    <main id="main" class="wrapper bg-dark">
+        <site-nav>
+        </site-nav>
+        <mobile-nav>
+        </mobile-nav>
+        <div class="spacer"></div>
+        <info-card>
+            <profile-picture></profile-picture>
+            <h2 slot="title">Hi! I'm Shawn</h2>
+            <card-section>
+                <p>
+                    I build things for the web, mostly with technologies in the
+                    Javascript ecosystem. Learn more below. Be sure to check out
+                    some of the cool stuff on the demos page, and the code over on
+                    github!
+                </p>
+            </card-section>
+            <card-section>
+                <h3 slot="sub-title">Goals For This Site</h3>
+                <p>This site is an exploration of the HTML Custom Elements and WebComponent specs, and became an
+                    opportunity to replace the first iteration of my profile site.</p>
+                <styled-link href="https://www.stevenoxon.com">View the old code here!</styled-link>
+                <styled-link href="https://www.stevenoxon.com">View the new code here!</styled-link>
+                <p>The experience has been interesting, as the spec feels to be "missing" certain features. The process
+                    woud have been more expeditious in a JS framework like React, but I feel the journey has been
+                    valuable. The resulting code is easily reusable, and has the performance benefits of small file
+                    sizes and built in browser functionality.</p>
+            </card-section>
+        </info-card id="bio">
+        <info-card>
+            <h2 slot="title">Bio</h2>
+            <card-section>
+                <h3 slot="sub-title">About</h3>
+                <p>
+                    I am an aspiring web developer based in central Connecticut, USA.
+                    I'm primarily interested in the Javascript and C languages. When
+                    I'm not working to improve my development skills, I teach guitar
+                    and music theory lessons.
+                </p>
+            </card-section>
+            <card-section>
+                <h3 slot="sub-title">Technologies</h3>
+                <ul>
+                    <li>Html/CSS</li>
+                    <li>Javascript</li>
+                    <li>NodeJS/ExpressJS</li>
+                    <li>ReactJS</li>
+                    <li>MongoDB</li>
+                    <li>SQL Server</li>
+                    <li>C</li>
+                    <li>GTK</li>
+                </ul>
+            </card-section>
+        </info-card>
+        <info-card id="projects">
+            <h2 slot="title">Projects</h2>
+            <card-section>
+                <h3 slot="sub-title">SteveNoxon.com</h3>
+                <p>
+                    SteveNoxon.com is a wordpress site I built for Steve Noxon, host
+                    of WATR's "Talk of the Town". The site primarily features audio
+                    clips from Steve's radio show. It uses a stock WordPress theme
+                    with some custom styling.
+                </p>
+                <styled-link href="https://www.stevenoxon.com">View live site</styled-link>
+            </card-section>
+            <card-section>
+                <h3 slot="sub-title">PoRiverMusic.com</h3>
+                <p>
+                    PoRiverMusic is a static html site for the Po River orchestral
+                    instrument company.
+                </p>
+                <styled-link href="https://www.porivermusic.com">View live site</styled-link>
+                <styled-link href="https://github.com/shawnmuzick/PoRiver">View the code on Github</styled-link>
+            </card-section>
+            <card-section>
+                <h3 slot="sub-title">Canon</h3>
+                <p>
+                    This is a multi-purpose web app developed for an employer. It
+                    includes analytics and forecasting with ChartJS used for the
+                    datavis. It also includes a graphic sales tag generator, a graphic
+                    catalog builder, an integration with the Reverb.com API to post
+                    products, and much more! The project is built using SQL server to
+                    integrate with the company's Point of Sale system. It also NodeJS,
+                    ExpressJS and TediousJS on the back end. The front end is built
+                    using HTML/CSS and plain JS. Note: many images contain portions
+                    redacted to respect the company's privacy
+                </p>
+            </card-section>
+            <card-section>
+                <h3 slot="sub-title">JC-Music.com</h3>
+                <p>
+                    JC-Music.com is a wordpress site based on the Shopify theme. It
+                    uses WooCommerce as it's ecommerce solution, with which it sells a
+                    variety of musical goods and services. The site has gone through
+                    several designs and maintainers over the company's history. As
+                    it's current maintainer, I have added new functionality, such as
+                    conditional shipping charges and cross-sell items at cart. I habe
+                    also improved product taxonomies, added new products and made
+                    stylistic and performance adjustments.
+                </p>
+                <styled-link href="https://www.jc-music.com">View live site</styled-link>
+            </card-section>
+            <card-section>
+                <h3 slot="sub-title">Simple JS Breakout Game</h3>
+                <p>
+                    This is a simple Breakout clone built in vanilla JS. The point of
+                    the exercise was to gain a better understanding of HTML canvas,
+                    the animation cycle, and game concepts like hit detection.
+                </p>
+                <styled-link href="./Simple-JS-Breakout/">Play it here!</styled-link>
+                <styled-link href="https://github.com/shawnmuzick/Simple-JS-Breakout">View the code on
+                    Github</styled-link>
+            </card-section>
+            <card-section>
+                <h3 slot="sub-title">FortRocks.com</h3>
+                <p>
+                    FortRocks.com is a wordpress site based on the Storefront theme.
+                    It uses WooCommerce as it's ecommerce solution
+                </p>
+                <styled-link href="https://www.fortrocks.com">View the live site</styled-link>
+            </card-section>
+        </info-card>
+        <info-card id="certifications">
+            <h2 slot="title">Certifications</h2>
+            <p style="display: flex; justify-content: center">Click on any certificate below to view</p>
+            <card-section>
+                <h3 slot="sub-title">FreeCodeCamp.org</h3>
+                <ul>
+                    <styled-list-link
+                        href="https://www.freecodecamp.org/certification/fcc6a0c7f8f-fb17-46ee-90d3-23262949dbd7/responsive-web-design">
+                        Responsive Web Design</styled-list-link>
+                    <styled-list-link
+                        href="https://www.freecodecamp.org/certification/fcc6a0c7f8f-fb17-46ee-90d3-23262949dbd7/javascript-algorithms-and-data-structures">
+                        Javascript Algorithms and Data Structures</styled-list-link>
+                </ul>
+            </card-section>
+            <card-section>
+                <h3 slot="sub-title">HackerRank.com</h3>
+                <ul>
+                    <styled-list-link
+                        href="https://www.hackerrank.com/certificates/53105a0bc555?utm_medium=email&utm_source=mail_template_1393&utm_campaign=hrc_skills_certificate">
+                        Javascript (Basic) Certificate
+                    </styled-list-link>
+                </ul>
+            </card-section>
+            <card-section>
+                <h3 slot="sub-title">Udemy.com</h3>
+                <ul>
+                    <styled-list-link href="http://ude.my/UC-efedf21b-9efb-46c4-9833-f9179f2c8a2d">
+                        Javascript: Understanding the Weird Parts</styled-list-link>
+                    <styled-list-link href="http://ude.my/UC-c0bee547-75d8-4e06-920c-b4fc5c15dca2">
+                        Learn and Understand NodeJS</styled-list-link>
+                </ul>
+            </card-section>
+        </info-card>
+        <info-card id="demos" id="demos">
+            <h2 slot="title">Demos</h2>
+            <card-section>
+                <h3 slot="sub-title">RPG "Orbs"</h3>
+                <code-demo src="/demo-orb/demo-orb.js">
+                    <demo-orb></demo-orb>
+                </code-demo>
+            </card-section>
+            <card-section>
+                <h3 slot="sub-title">Progress Bar</h3>
+                <code-demo src="/demo-progressbar/demo-progressbar.js">
+                    <div class="progress-container">
+                        <demo-progressbar></demo-progressbar>
+                    </div>
+                </code-demo>
+            </card-section>
+            <card-section>
+                <h3 slot="sub-title">Skeleton</h3>
+            </card-section>
+            <card-section>
+                <h3 slot="sub-title">Wave</h3>
+                <code-demo src="/demo-wave/style.css">
+                    <div class="progress-container">
+                        <demo-wave></demo-wave>
+                    </div>
+                </code-demo>
+            </card-section>
+        </info-card>
+        <social-footer></social-footer>
+    </main>
+    <script src="/highlight/highlight.min.js"></script>
+    <script src="/pageFactory.js"></script>
+</body>
+
+</html>

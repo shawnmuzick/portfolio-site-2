@@ -1,0 +1,47 @@
+progress {
+  background-color: transparent !important;
+  display: flex;
+  flex: 1;
+  transform: rotate(180deg);
+}
+progress[value] {
+  appearance: none;
+  background-color: transparent !important;
+  transform: rotate(180deg);
+}
+::-webkit-progress-value {
+  display: flex;
+  flex: 1;
+  background-color: var(--bg-dark) !important;
+  transition: background-color 1s;
+  transform: rotate(180deg);
+}
+::-webkit-progress-bar {
+  background-color: transparent !important;
+  transition: background-color 1s;
+}
+.inner {
+  display: flex;
+  flex: 1;
+  background-clip: content-box;
+  background-color: var(--primary);
+  animation: animate 2s infinite;
+  margin: 20px;
+  border-radius: var(--border-rounded-corners);
+}
+#percent {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+@keyframes animate {
+  0% {
+    background-color: var(--primary);
+  }
+  50% {
+    background-color: var(--secondary);
+  }
+  100% {
+    background-color: var(--primary);
+  }
+}

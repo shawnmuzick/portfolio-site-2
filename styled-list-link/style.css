@@ -1,0 +1,18 @@
+a:visited,
+a {
+  color: var(--header-text-color);
+  text-decoration: none;
+}
+.section-content-link:hover,
+span.section-content-link > p:hover,
+a:hover,
+span:hover,
+*:hover {
+  color: var(--primary);
+}
+:host(*:hover) {
+  color: var(--primary);
+}
+::slotted(*:hover) {
+  color: var(--primary);
+}

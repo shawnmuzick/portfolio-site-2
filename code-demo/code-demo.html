@@ -1,0 +1,13 @@
+<template id="code-demo-template">
+    <link rel="stylesheet" href="/highlight/styles/material-darker.min.css" />
+    <link rel="stylesheet" href="/css-type.min.css" async>
+    <link rel="stylesheet" href="/code-demo/style.css">
+    <div class="demo-container">
+        <slot></slot>
+        <div class="demo-container-outer">
+            <pre id="code" class="code">
+            <code ></code>
+        </pre>
+        </div>
+    </div>
+</template>

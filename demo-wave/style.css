@@ -1,0 +1,56 @@
+.wave {
+  position: relative;
+  background: white;
+  height: 300px;
+  width: 300px;
+  outline: 0px;
+  border: 0px;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: var(--round-corner);
+}
+.wave::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to top, var(--blue-accent), #0030cf);
+  height: 200%;
+  width: 200%;
+  bottom: -65%;
+  left: -50%;
+  border-radius: 40%;
+  animation: wave2 4s ease-in-out infinite;
+}
+.wave:after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(to bottom, var(--blue-accent), #0030cf);
+  height: 200%;
+  width: 200%;
+  bottom: -70%;
+  left: -50%;
+  border-radius: 45%;
+  animation: wave 4s ease-in-out infinite;
+  z-index: 1;
+}
+@keyframes wave {
+  0% {
+    transform: translateY(80%) rotate(180deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(80%) rotate(180deg);
+  }
+}
+@keyframes wave2 {
+  0% {
+    transform: translateY(70%) rotate(200deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(70%) rotate(200deg);
+  }
+}

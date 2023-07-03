@@ -1,0 +1,102 @@
+.demo-container {
+  display: flex;
+  flex-direction: row;
+}
+.demo-container pre {
+  display: flex;
+  flex: 1;
+  width: auto;
+  margin: 0px;
+}
+pre code.hljs {
+  flex: 1;
+  margin: 0px !important;
+  overflow: hidden;
+  padding: 10px !important;
+}
+.demo-container-outer {
+  animation: animateNoShadow 2s infinite;
+  background-clip: padding-box !important;
+  background-color: var(--primary);
+  flex: 1;
+  height: 300px;
+  overflow: scroll;
+}
+
+*::-webkit-scrollbar-thumb {
+  animation: var(--hover-animation);
+  border-radius: 10px !important;
+  background-color: inherit !important;
+}
+*::-webkit-scrollbar-thumb:hover {
+  animation: var(--hover-animation);
+  border-radius: 10px !important;
+  background-color: inherit !important;
+  box-shadow: 0px 0px 30px 10px var(--primary) !important;
+}
+::-webkit-scrollbar {
+  animation: var(--hover-animation);
+  background-color: var(--bg-dark) !important;
+}
+::slotted(*) {
+  height: 300px;
+  width: 300px;
+}
+
+@keyframes animate {
+  0% {
+    box-shadow: var(--shadow-primary);
+    background-color: var(--primary);
+  }
+  50% {
+    box-shadow: var(--shadow-secondary);
+    background-color: var(--secondary);
+  }
+  100% {
+    box-shadow: var(--shadow-primary);
+    background-color: var(--primary);
+  }
+}
+
+@keyframes animateNoShadow {
+  0% {
+    background-color: var(--primary);
+  }
+  50% {
+    background-color: var(--secondary);
+  }
+  100% {
+    background-color: var(--primary);
+  }
+}
+
+@media screen and (min-width: 200px) {
+  .demo-container {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 360px) {
+}
+@media screen and (min-width: 411px) {
+}
+
+@media screen and (min-width: 768px) {
+  .demo-container {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+  }
+  .demo-container-outer {
+    overflow: scroll;
+    -webkit-background-clip: text !important;
+    background-color: var(--primary);
+    background-clip: padding-box !important;
+    animation: animateNoShadow 2s infinite;
+    flex: 1;
+  }
+  pre {
+    overflow: hidden;
+  }
+}

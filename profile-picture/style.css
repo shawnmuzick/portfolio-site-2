@@ -1,0 +1,25 @@
+.landing-content-image {
+  display: flex;
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  border-radius: var(--border-circle);
+  margin: auto;
+}
+:is(img):hover {
+  animation: animate 2s infinite;
+}
+@keyframes animate {
+  0% {
+    box-shadow: var(--shadow-primary);
+    background-color: var(--primary);
+  }
+  50% {
+    box-shadow: var(--shadow-secondary);
+    background-color: var(--secondary);
+  }
+  100% {
+    box-shadow: var(--shadow-primary);
+    background-color: var(--primary);
+  }
+}

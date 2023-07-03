@@ -1,0 +1,14 @@
+slot[name="sub-title"]::slotted(*) {
+  display: block;
+  padding: var(--size-s);
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+  text-decoration-style: double;
+}
+
+@media screen and (min-width: 200px) {
+}
+@media screen and (min-width: 360px) {
+}
+@media screen and (min-width: 411px) {
+}
